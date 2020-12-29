@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
 namespace Final_project_Adina_Kinga.PageObjects
 {
-    class HomePage
+    partial class HomePage
     {
+        private IWebDriver _driver;
+
+        public HomePage(IWebDriver driver)
+        {
+            _driver = driver;
+        }
     }
 }

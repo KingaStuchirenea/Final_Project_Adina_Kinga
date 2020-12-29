@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Final_project_Adina_Kinga.PageObjects
 {
-    class LoginPage
+    partial class LoginPage
     {
     }
 }
