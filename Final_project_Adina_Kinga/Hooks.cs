@@ -11,15 +11,13 @@ namespace Final_project_Adina_Kinga
     [Binding]
     public class Hooks : BaseDriver
     {
-        [SetUp]
-        //[BeforeScenario]
+        [BeforeScenario]
         public void BeforeScenario()
         {
             CreateDriver();
         }
 
-        [TearDown]
-        //[AfterScenario]
+        [AfterScenario]
         public void AfterScenario()
         {
             {
