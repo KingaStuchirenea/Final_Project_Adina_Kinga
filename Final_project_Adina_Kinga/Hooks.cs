@@ -15,14 +15,18 @@ namespace Final_project_Adina_Kinga
         public void BeforeScenario()
         {
             CreateDriver();
+            NavigateToUrl();
         }
 
-        [AfterScenario]
-        public void AfterScenario()
+        //[AfterScenario]
+        //public void AfterScenario()
+        //{
+        //   Driver.Quit();
+        //}
+
+        public void NavigateToUrl()
         {
-            {
-                Driver.Quit();
-            }
+            Driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
         }
     }
 }
