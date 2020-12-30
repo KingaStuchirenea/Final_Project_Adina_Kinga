@@ -27,19 +27,45 @@ namespace Final_project_Adina_Kinga.StepDefinitions
         {
             HomePage homePage = new HomePage(Driver);
             homePage.ContactButton.Click();
+            homePage.PopulateCustomerCareForm("John Miller", "john.miller@somemail.com", 0798765432, "Message text for customer care support.");
         }
 
-        //[When(@"clicking on Send to customer care button")]
-        //public void WhenClickingOnButton()
-        //{
-        //    ScenarioContext.Current.Pending();
-        //}
+        [When(@"clicking on Send to customer care button")]
+        public void WhenClickingOnSubmitButton()
+        {
+            HomePage homePage = new HomePage(Driver);
+            homePage.SubmitButton.Click();
+        }
 
-        //[Then(@"message is registered")]
-        //public void ThenMessageIsRegistered()
-        //{
-        //    ScenarioContext.Current.Pending();
-        //}
+        [Then(@"message is registered")]
+        public void ThenMessageIsRegistered()
+        {
+            HomePage homePage = new HomePage(Driver);
+            Assert.IsTrue(homePage.SubmitMessage.Displayed);
+        }
+
+        [Given(@"User populates partially Customer Care Form")]
+        public void GivenUserPopulatesPartiallyCustomerCareForm()
+        {
+            HomePage homePage = new HomePage(Driver);
+            homePage.ContactButton.Click();
+            homePage.PopulatePartiallyCustomerCareForm("John Miller", 0798765432, "Message text for customer care support.");
+        }
+
+        [When(@"click on Send to customer care button")]
+        public void WhenClickOnSendToCustomerCareButton()
+        {
+            HomePage homePage = new HomePage(Driver);
+            homePage.SubmitButton.Click();
+        }
+
+        [Then(@"warning message appears")]
+        public void ThenWarningMessageAppears()
+        {
+            HomePage homePage = new HomePage(Driver);
+            Assert.IsTrue(homePage.WarningMessage.Displayed);
+        }
+
 
     }
 }
