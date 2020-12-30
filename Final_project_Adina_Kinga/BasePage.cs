@@ -17,9 +17,9 @@ namespace Final_project_Adina_Kinga
             _driver = Driver;
         }
 
-        public void NavigateToUrl(string pageUrl)
+        public void NavigateToUrl()
         {
-            _driver.Navigate().GoToUrl(pageUrl);
+            _driver.Navigate().GoToUrl(ParaBank);
         }
     }
 }
