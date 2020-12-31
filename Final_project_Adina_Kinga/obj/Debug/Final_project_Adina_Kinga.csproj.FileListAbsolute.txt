@@ -87,3 +87,4 @@ C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Fi
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.dll
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.pdb
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csprojAssemblyReference.cache
+C:\Users\adpredescu\Desktop\AgileHub\FinalProject_Kinga&Adina\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csprojAssemblyReference.cache

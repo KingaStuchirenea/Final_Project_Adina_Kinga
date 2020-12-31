@@ -32,7 +32,23 @@ namespace Final_project_Adina_Kinga.PageObjects
         public IWebElement Product8 => _driver.FindElement(By.XPath("//*[@id='menu-item-6914']"));
         public IWebElement Product9 => _driver.FindElement(By.XPath("//*[@id='menu-item-6915']"));
 
+        #region Registration locators
+        public IWebElement RegisterButton => _driver.FindElement(By.CssSelector("#loginPanel > p:nth-child(3) > a"));
+        public IWebElement FirstNameField => _driver.FindElement(By.Id("customer.firstName"));
+        public IWebElement LastNameField => _driver.FindElement(By.Id("customer.lastName"));
+        public IWebElement AddressField => _driver.FindElement(By.Id("customer.address.street"));
+        public IWebElement CityField => _driver.FindElement(By.Id("customer.address.city"));
+        public IWebElement StateField => _driver.FindElement(By.Id("customer.address.state"));
+        public IWebElement ZipCodeField => _driver.FindElement(By.Id("customer.address.zipCode"));
+        public IWebElement PhoneNumberField => _driver.FindElement(By.Id("customer.phoneNumber"));
+        public IWebElement SSNNumberField => _driver.FindElement(By.Id("customer.ssn"));
+        public IWebElement UsernameField => _driver.FindElement(By.Id("customer.username"));
+        public IWebElement PasswordField => _driver.FindElement(By.Id("customer.password"));
+        public IWebElement ConfirmPasswordField => _driver.FindElement(By.Id("repeatedPassword"));
+        public IWebElement SubmitRegisterationButton => _driver.FindElement(By.CssSelector("#customerForm > table > tbody > tr:nth-child(13) > td:nth-child(2) > input"));
+        public IWebElement AccountCreatedSuccessfullyMessage => _driver.FindElement(By.CssSelector("#rightPanel > p"));
 
+        #endregion
 
     }
 }

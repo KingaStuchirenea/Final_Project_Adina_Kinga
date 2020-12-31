@@ -38,5 +38,30 @@ namespace Final_project_Adina_Kinga.PageObjects
             Assert.IsTrue(Product9.Displayed);
         }
 
+        public void GoToRegisterNewAccountPage()
+        {
+            RegisterButton.Click();
+        }
+
+        public void PopulateRegisterNewAccountForm(string firstName, string lastName, string address, string city, string state, string zipCode, int phone, int ssn) 
+        {
+            FirstNameField.SendKeys(firstName);
+            LastNameField.SendKeys(lastName);
+            AddressField.SendKeys(address);
+            CityField.SendKeys(city);
+            StateField.SendKeys(state);
+            ZipCodeField.SendKeys(zipCode);
+            PhoneNumberField.SendKeys(phone.ToString());
+            SSNNumberField.SendKeys(ssn.ToString());
+        }
+
+        public void PopulateRegisterAccountDetails(string username, string password, string confirmPassword)
+        {
+            UsernameField.SendKeys(username);
+            PasswordField.SendKeys(password);
+            ConfirmPasswordField.SendKeys(confirmPassword);
+            SubmitRegisterationButton.Click();
+        }
+
     }
 }
