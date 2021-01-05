@@ -106,7 +106,6 @@
     <Compile Include="StepDefinitions\CustomerLoginTests.cs" />
     <Compile Include="StepDefinitions\HomePageTests.cs" />
     <Compile Include="StepDefinitions\ProductTests.cs" />
-    <Compile Include="Tests\LoginTests.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,17 +9,17 @@ namespace Final_project_Adina_Kinga
 {
    public class BasePage : BaseDriver
     {
-        public const string ParaBank = "https://parabank.parasoft.com/parabank/index.htm";
-        private IWebDriver _driver;
+        //public const string ParaBank = "https://parabank.parasoft.com/parabank/index.htm";
+        //private IWebDriver _driver;
 
-        public BasePage()
-        {
-            _driver = Driver;
-        }
+        //public BasePage()
+        //{
+        //    _driver = Driver;
+        //}
 
-        public void NavigateToUrl()
-        {
-            _driver.Navigate().GoToUrl(ParaBank);
-        }
+        //public void NavigateToUrl()
+        //{
+        //    _driver.Navigate().GoToUrl(ParaBank);
+        //}
     }
 }

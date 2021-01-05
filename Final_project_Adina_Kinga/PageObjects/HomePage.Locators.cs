@@ -2,7 +2,7 @@
 
 namespace Final_project_Adina_Kinga.PageObjects
 {
-    partial class HomePage
+    partial class HomePage 
     {
         private IWebDriver _driver;
         public HomePage(IWebDriver driver)
@@ -10,6 +10,7 @@ namespace Final_project_Adina_Kinga.PageObjects
             _driver = driver;
         }
 
+        #region Customer care request locators
         public IWebElement ContactButton => _driver.FindElement(By.CssSelector("li[class=contact]"));
         public IWebElement NameField => _driver.FindElement(By.Id("name"));
         public IWebElement EmailField => _driver.FindElement(By.Id("email"));
@@ -18,6 +19,10 @@ namespace Final_project_Adina_Kinga.PageObjects
         public IWebElement SubmitButton => _driver.FindElement(By.CssSelector("input[value='Send to Customer Care'"));
         public IWebElement SubmitMessage => _driver.FindElement(By.CssSelector("div#rightPanel p"));
         public IWebElement WarningMessage => _driver.FindElement(By.Id("email.errors"));
+
+        #endregion
+
+        #region Products locators
         public IWebElement ProductsOption => _driver.FindElement(By.XPath("//*[@id='headerPanel']/ul[1]/li[4]/a"));
         public IWebElement AllowCookies => _driver.FindElement(By.XPath("//div[text()='Allow All']"));
         public IWebElement AcceptCookies => _driver.FindElement(By.Id("hs-eu-confirmation-button"));
@@ -31,6 +36,21 @@ namespace Final_project_Adina_Kinga.PageObjects
         public IWebElement Product7 => _driver.FindElement(By.XPath("//*[@id='menu-item-6913']"));
         public IWebElement Product8 => _driver.FindElement(By.XPath("//*[@id='menu-item-6914']"));
         public IWebElement Product9 => _driver.FindElement(By.XPath("//*[@id='menu-item-6915']"));
+        public IWebElement ParasoftJtestBlock => _driver.FindElement(By.XPath("//section[3]/div[3]/div[2]/div[2]/a"));
+        public IWebElement TryParasoftJtestButton => _driver.FindElement(By.CssSelector(".btn-list > a:nth-child(1)"));
+        public IWebElement FirstNameFieldJtest => _driver.FindElement(By.Name("firstname"));
+        public IWebElement LastNameFieldJtest => _driver.FindElement(By.Name("lastname"));
+        public IWebElement CompanyFieldJtest => _driver.FindElement(By.Name("company"));
+        public IWebElement JobtitleFieldJtest => _driver.FindElement(By.Name("jobtitle"));
+        public IWebElement EmailFieldJtest => _driver.FindElement(By.Name("email"));
+        public IWebElement PhoneFieldJtest => _driver.FindElement(By.Name("phone"));
+        public IWebElement CountryDropdownJtest => _driver.FindElement(By.Name("country"));
+        public IWebElement TryParasJtestButton => _driver.FindElement(By.CssSelector("input[value='TRY PARASOFT JTEST']"));
+        public IWebElement SubmitMessageParasoftJtest => _driver.FindElement(By.CssSelector("div[data-reactid='.hbspt-forms-0']"));
+        public IWebElement WarningMessageParasoftJtest => _driver.FindElement(By.CssSelector(".hs-form-field > ul > li > label"));
+
+
+        #endregion
 
         #region Registration locators
         public IWebElement RegisterButton => _driver.FindElement(By.CssSelector("#loginPanel > p:nth-child(3) > a"));

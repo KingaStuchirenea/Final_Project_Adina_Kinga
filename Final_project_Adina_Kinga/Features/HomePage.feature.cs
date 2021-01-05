@@ -75,14 +75,14 @@ namespace Final_project_Adina_Kinga.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Sent request to customer care")]
-        [NUnit.Framework.CategoryAttribute("CustomerCareRequestSent")]
-        public virtual void SentRequestToCustomerCare()
+        [NUnit.Framework.DescriptionAttribute("Request to customer care sent")]
+        [NUnit.Framework.CategoryAttribute("CustomerCareRequests")]
+        public virtual void RequestToCustomerCareSent()
         {
             string[] tagsOfScenario = new string[] {
-                    "CustomerCareRequestSent"};
+                    "CustomerCareRequests"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sent request to customer care", null, tagsOfScenario, argumentsOfScenario);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Request to customer care sent", null, tagsOfScenario, argumentsOfScenario);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -118,14 +118,12 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Request to customer care NOT sent")]
-        [NUnit.Framework.CategoryAttribute("CustomerCareRequestNotSent")]
         public virtual void RequestToCustomerCareNOTSent()
         {
-            string[] tagsOfScenario = new string[] {
-                    "CustomerCareRequestNotSent"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Request to customer care NOT sent", null, tagsOfScenario, argumentsOfScenario);
-#line 13
+#line 12
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -145,13 +143,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 14
+#line 13
  testRunner.Given("User populates partially Customer Care Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 15
+#line 14
  testRunner.When("click on Send to customer care button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 16
+#line 15
  testRunner.Then("warning message appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

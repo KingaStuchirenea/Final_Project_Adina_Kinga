@@ -11,14 +11,14 @@ namespace Final_project_Adina_Kinga
         Chrome,
         Firefox
     }
-    public class BaseDriver
+    public class BaseDriver 
     {
         private BrowserType _browserType;
         public static IWebDriver Driver;
 
         public void CreateDriver()
         {
-            var browserType = TestContext.Parameters.Get("Browser", "Firefox");
+            var browserType = TestContext.Parameters.Get("Browser", "Chrome");
             _browserType = (BrowserType)Enum.Parse(typeof(BrowserType), browserType);
             ChooseDriverInstance(_browserType);
             Driver.Manage().Window.Maximize();

@@ -9,7 +9,7 @@ using TechTalk.SpecFlow;
 namespace Final_project_Adina_Kinga.StepDefinitions
 {
     [Binding]
-    public sealed class CustomerLoginTests : Hooks
+    public sealed class CustomerLoginTests : BaseDriver //Hooks
     {
         [Given(@"I navigate to Register Page")]
         public void GivenINavigateToRegisterPage()

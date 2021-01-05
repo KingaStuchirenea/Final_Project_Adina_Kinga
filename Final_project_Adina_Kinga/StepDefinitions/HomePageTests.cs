@@ -13,7 +13,7 @@ using Final_project_Adina_Kinga.PageObjects;
 namespace Final_project_Adina_Kinga.StepDefinitions
 {
     [Binding]
-    public sealed class HomePageTests : Hooks
+    public sealed class HomePageTests : BaseDriver // Hooks
     {
         private readonly ScenarioContext _scenarioContext;
 
@@ -21,6 +21,8 @@ namespace Final_project_Adina_Kinga.StepDefinitions
         {
             _scenarioContext = scenarioContext;
         }
+
+        //Customer care form populated and registered with success
 
         [Given(@"User populates Customer Care Form")]
         public void GivenUserPopulatesCustomerCareForm()
@@ -43,6 +45,8 @@ namespace Final_project_Adina_Kinga.StepDefinitions
             HomePage homePage = new HomePage(Driver);
             Assert.IsTrue(homePage.SubmitMessage.Displayed);
         }
+
+        //Customer care form populated partially, message NOT registered -> Warning message
 
         [Given(@"User populates partially Customer Care Form")]
         public void GivenUserPopulatesPartiallyCustomerCareForm()
