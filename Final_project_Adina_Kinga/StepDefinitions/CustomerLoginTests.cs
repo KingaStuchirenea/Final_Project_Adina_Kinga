@@ -1,4 +1,5 @@
 ﻿using Final_project_Adina_Kinga.PageObjects;
+using Final_project_Adina_Kinga.Models;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -22,15 +23,10 @@ namespace Final_project_Adina_Kinga.StepDefinitions
         [When(@"I populate the registration form")]
         public void WhenIPopulateTheRegistrationForm()
         {
-            HomePage homePage = new HomePage(Driver);
-            homePage.PopulateRegisterNewAccountForm("John", "Doe", "John's Address", "City", "State", "ZipCode", 1234567890, 0987654321);
-        }
-
-        [When(@"populate account login details")]
-        public void WhenPopulateAccountLoginDetails()
-        {
-            HomePage homePage = new HomePage(Driver);
-            homePage.PopulateRegisterAccountDetails("John.Doe", "password123", "password123");
+            RegisterAccount createForm = new RegisterAccount();
+            new HomePage(Driver)
+                .PopulateRegisterAccountForm(createForm)
+                .ClickRegisterButton();
         }
 
         [Then(@"a welcome message is displayed")]

@@ -7,7 +7,6 @@
 Scenario: Register New Account
 	Given I navigate to Register Page
 	When I populate the registration form
-		And populate account login details
 	Then a welcome message is displayed
 
 @Login

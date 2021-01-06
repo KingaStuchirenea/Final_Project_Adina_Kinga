@@ -54,17 +54,17 @@ namespace Final_project_Adina_Kinga.PageObjects
 
         #region Registration locators
         public IWebElement RegisterButton => _driver.FindElement(By.CssSelector("#loginPanel > p:nth-child(3) > a"));
-        public IWebElement FirstNameField => _driver.FindElement(By.Id("customer.firstName"));
-        public IWebElement LastNameField => _driver.FindElement(By.Id("customer.lastName"));
-        public IWebElement AddressField => _driver.FindElement(By.Id("customer.address.street"));
-        public IWebElement CityField => _driver.FindElement(By.Id("customer.address.city"));
-        public IWebElement StateField => _driver.FindElement(By.Id("customer.address.state"));
-        public IWebElement ZipCodeField => _driver.FindElement(By.Id("customer.address.zipCode"));
-        public IWebElement PhoneNumberField => _driver.FindElement(By.Id("customer.phoneNumber"));
-        public IWebElement SSNNumberField => _driver.FindElement(By.Id("customer.ssn"));
-        public IWebElement UsernameField => _driver.FindElement(By.Id("customer.username"));
-        public IWebElement PasswordField => _driver.FindElement(By.Id("customer.password"));
-        public IWebElement ConfirmPasswordField => _driver.FindElement(By.Id("repeatedPassword"));
+        public const string FirstNameField = "customer.firstName";
+        public const string LastNameField = "customer.lastName";
+        public const string AddressField = "customer.address.street";
+        public const string CityField = "customer.address.city";
+        public const string StateField = "customer.address.state";
+        public const string ZipCodeField = "customer.address.zipCode";
+        public const string PhoneNumberField = "customer.phoneNumber";
+        public const string SSNNumberField = "customer.ssn";
+        public const string UsernameField = "customer.username";
+        public const string PasswordField = "customer.password";
+        public const string ConfirmPasswordField = "repeatedPassword";
         public IWebElement SubmitRegisterationButton => _driver.FindElement(By.CssSelector("#customerForm > table > tbody > tr:nth-child(13) > td:nth-child(2) > input"));
         public IWebElement AccountCreatedSuccessfullyMessage => _driver.FindElement(By.CssSelector("#rightPanel > p"));
 

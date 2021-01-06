@@ -36,5 +36,30 @@ namespace Final_project_Adina_Kinga
                     break;
             }
         }
+
+        public IWebElement WebElement(string id)
+        {
+            IWebElement webElement;
+            webElement = Driver.FindElement(By.Id(id));
+            return webElement;
+        }
+        public BaseDriver TypeTextId(string id, string text)
+        {
+            var element = WebElement(id);
+            element.SendKeys(text);
+            return this;
+        }
+        public BaseDriver TypeTextCss(string css, string text)
+        {
+            var element = WebElement(css);
+            element.SendKeys(text);
+            return this;
+        }
+        public BaseDriver TypeTextXPath(string xpath, string text)
+        {
+            var element = WebElement(xpath);
+            element.SendKeys(text);
+            return this;
+        }
     }
 }
