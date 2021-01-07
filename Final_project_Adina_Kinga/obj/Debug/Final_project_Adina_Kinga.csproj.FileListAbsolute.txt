@@ -42,6 +42,7 @@ C:\Users\adpredescu\Desktop\AgileHub\FinalProject_Kinga&Adina\Final_Project_Adin
 C:\Users\adpredescu\Desktop\AgileHub\FinalProject_Kinga&Adina\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csproj.CopyComplete
 C:\Users\adpredescu\Desktop\AgileHub\FinalProject_Kinga&Adina\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.dll
 C:\Users\adpredescu\Desktop\AgileHub\FinalProject_Kinga&Adina\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.pdb
+C:\Users\adpredescu\Desktop\AgileHub\FinalProject_Kinga&Adina\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csprojAssemblyReference.cache
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
@@ -82,9 +83,8 @@ C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Fi
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\bin\Debug\Utf8Json.xml
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\bin\Debug\WebDriver.xml
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\bin\Debug\WebDriver.Support.xml
+C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csprojAssemblyReference.cache
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csproj.CoreCompileInputs.cache
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csproj.CopyComplete
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.dll
 C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.pdb
-C:\Users\kstuchirenea\Desktop\AgileHub\NewGitHub\Proiect AgileHub Adina&Kinga\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csprojAssemblyReference.cache
-C:\Users\adpredescu\Desktop\AgileHub\FinalProject_Kinga&Adina\Final_Project_Adina_Kinga\Final_project_Adina_Kinga\obj\Debug\Final_project_Adina_Kinga.csprojAssemblyReference.cache

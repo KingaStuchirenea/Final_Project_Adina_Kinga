@@ -36,7 +36,7 @@ namespace Final_project_Adina_Kinga.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Product", "\tIn order to view or try products\r\n\tAs a user\r\n\tI want to see all products and to" +
-                    " be able to open them", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    " be able to try them", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

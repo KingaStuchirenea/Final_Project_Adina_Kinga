@@ -1,7 +1,7 @@
 ﻿Feature: HomePage
-	In order to send request to customer care
-	As a user
-	I want to be told if the message is registered or not
+	In order to send customer care request / Initialize, clean DB
+	As a user / as an admin
+	I want to be notified if the action is done or not
 
 @CustomerCareRequests
 Scenario: Request to customer care sent
@@ -14,3 +14,13 @@ Scenario: Request to customer care NOT sent
 	When click on Send to customer care button
 	Then warning message appears
 
+@InitializeCleanDatabaseAsAdmin
+Scenario: As admin initialize the database
+Given User navigates to Admin page
+When clicks on initialize button
+Then database is initialized
+
+Scenario: As admin clean the database
+Given User navigates to Admin page
+When clicks on clean button
+Then database is cleaned

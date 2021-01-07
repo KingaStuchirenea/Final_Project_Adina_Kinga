@@ -103,13 +103,17 @@
     <Compile Include="PageObjects\HomePage.Locators.cs" />
     <Compile Include="PageObjects\LoginPage.Actions.cs" />
     <Compile Include="PageObjects\LoginPage.Locators.cs" />
+    <Compile Include="PageObjects\ProductPage.Actions.cs" />
+    <Compile Include="PageObjects\ProductPage.Locators.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StepDefinitions\AccountServicesTests.cs" />
     <Compile Include="StepDefinitions\CustomerLoginTests.cs" />
     <Compile Include="StepDefinitions\HomePageTests.cs" />
     <Compile Include="StepDefinitions\ProductTests.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\AccountServices.feature" />
     <None Include="Features\CustomerLogin.feature" />
     <None Include="Features\HomePage.feature" />
     <None Include="Features\Product.feature" />

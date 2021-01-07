@@ -70,6 +70,42 @@ namespace Final_project_Adina_Kinga.StepDefinitions
             Assert.IsTrue(homePage.WarningMessage.Displayed);
         }
 
+        //As admin, initialize and clean database
+
+        [Given(@"User navigates to Admin page")]
+        public void GivenUserNavigatesToAdminPage()
+        {
+            HomePage homePage = new HomePage(Driver);
+            homePage.AdminPageOption.Click();
+        }
+
+        [When(@"clicks on initialize button")]
+        public void WhenClicksOnInitializeButton()
+        {
+            HomePage homePage = new HomePage(Driver);
+            homePage.InitializeButton.Click();
+        }
+
+        [Then(@"database is initialized")]
+        public void ThenDatabaseIsInitialized()
+        {
+            HomePage homePage = new HomePage(Driver);
+            Assert.IsTrue(homePage.DatabaseInitializedMessage.Displayed);
+        }
+
+        [When(@"clicks on clean button")]
+        public void WhenClicksOnCleanButton()
+        {
+            HomePage homePage = new HomePage(Driver);
+            homePage.CleanButton.Click();
+        }
+
+        [Then(@"database is cleaned")]
+        public void ThenDatabaseIsCleaned()
+        {
+            HomePage homePage = new HomePage(Driver);
+            Assert.IsTrue(homePage.DatabaseCleanedMessage.Displayed);
+        }
 
     }
 }
