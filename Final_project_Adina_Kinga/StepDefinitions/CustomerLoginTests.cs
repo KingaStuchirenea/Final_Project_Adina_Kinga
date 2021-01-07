@@ -16,8 +16,7 @@ namespace Final_project_Adina_Kinga.StepDefinitions
         public void GivenINavigateToRegisterPage()
         {
             HomePage homePage = new HomePage(Driver);
-            homePage.GoToRegisterNewAccountPage();
-            
+            homePage.GoToRegisterNewAccountPage();           
         }
 
         [When(@"I populate the registration form")]
@@ -35,8 +34,5 @@ namespace Final_project_Adina_Kinga.StepDefinitions
             HomePage homePage = new HomePage(Driver);
             Assert.IsTrue(homePage.AccountCreatedSuccessfullyMessage.Displayed);
         }
-
-
-
     }
 }
