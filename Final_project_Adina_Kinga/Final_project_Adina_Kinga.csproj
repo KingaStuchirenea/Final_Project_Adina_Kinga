@@ -96,7 +96,7 @@
     <Compile Include="BaseDriver.cs" />
     <Compile Include="BasePage.cs" />
     <Compile Include="Hooks.cs" />
-    <Compile Include="Models\RegisterAccount.cs" />
+    <Compile Include="Dto\RegisterAccount.cs" />
     <Compile Include="PageObjects\AccountServices.Actions.cs" />
     <Compile Include="PageObjects\AccountServices.Locators.cs" />
     <Compile Include="PageObjects\HomePage.Actions.cs" />
