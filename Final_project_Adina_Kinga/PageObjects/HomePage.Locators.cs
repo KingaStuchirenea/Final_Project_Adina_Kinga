@@ -60,5 +60,12 @@ namespace Final_project_Adina_Kinga.PageObjects
 
         #endregion
 
+        #region WelcometoParabank locators
+        public IWebElement HomePageIcon => _driver.FindElement(By.XPath("//*[@id='headerPanel']/ul[2]/li[1]/a"));
+        public IWebElement AboutIcon => _driver.FindElement(By.XPath("//*[@id='headerPanel']/ul[2]/li[2]/a"));
+        public IWebElement ContactIcon => _driver.FindElement(By.XPath("//*[@id='headerPanel']/ul[2]/li[3]/a"));
+        public IWebElement ContactFormTable => _driver.FindElement(By.CssSelector("#contactForm > table"));
+        #endregion
+
     }
 }
