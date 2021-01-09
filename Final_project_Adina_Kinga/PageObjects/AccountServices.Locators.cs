@@ -27,7 +27,7 @@ namespace Final_project_Adina_Kinga.PageObjects
         public IWebElement RequestLoanOption => _driver.FindElement(By.CssSelector("a[href='/parabank/requestloan.htm']"));
         public const string LoanAmountField = "amount";
         public const string DownPaymentField = "downPayment";
-        public const string FromAccountDropdown = "fromAccountId";
+        public const string FromAccountDropdown = "#fromAccountId > option:nth-child(1)";
         public IWebElement ApplyNowButton => _driver.FindElement(By.CssSelector("input[type='submit']"));
         public IWebElement LoanProviderTable => _driver.FindElement(By.CssSelector("table[class='form']"));
 

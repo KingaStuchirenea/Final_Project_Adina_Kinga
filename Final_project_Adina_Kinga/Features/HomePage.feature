@@ -24,3 +24,8 @@ Scenario: As admin clean the database
 Given User navigates to Admin page
 When clicks on clean button
 Then database is cleaned
+
+@CheckPages
+Scenario: Check Pages load properly
+	Given I click on all the welcome to Parabank Icons
+	Then all the pages load properly

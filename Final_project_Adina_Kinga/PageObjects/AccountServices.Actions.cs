@@ -24,7 +24,7 @@ namespace Final_project_Adina_Kinga.PageObjects
         {
             TypeTextId(LoanAmountField, requestLoan.LoanAmount.ToString());
             TypeTextId(DownPaymentField, requestLoan.DownPayment.ToString());
-            TypeTextId(FromAccountDropdown, requestLoan.FromAccount);
+            FromAccountDropdown.Click();
             return this;
         }
 

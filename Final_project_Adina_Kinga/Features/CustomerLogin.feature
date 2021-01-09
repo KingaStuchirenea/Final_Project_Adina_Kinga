@@ -26,8 +26,3 @@ Scenario: User Logout
 	Given I login to Parabank website
 	When I click the logout button
 	Then the Register button is displayed
-
-@CheckPages
-Scenario: Check Pages load properly
-	Given I click on all the welcome to Parabank Icons
-	Then all the pages load properly
