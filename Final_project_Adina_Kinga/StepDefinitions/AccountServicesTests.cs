@@ -91,6 +91,35 @@ namespace Final_project_Adina_Kinga.StepDefinitions
             Assert.IsTrue(accountServices.LoanProviderTable.Displayed);
         }
 
+        [Given(@"I navigate to Update Contact Info page")]
+        public void GivenINavigateToUpdateContactInfoPage()
+        {
+            new AccountServices(Driver)
+                .GoToUpdateContactInfoPage();
+        }
+
+        [When(@"filling the updated information fields")]
+        public void WhenFillingTheUpdatedInformationFields()
+        {
+            UserInformationDetailsDto contactInfo = new UserInformationDetailsDto();
+            new AccountServices(Driver)
+                .UpdateContactInfo(contactInfo);
+        }
+
+        [When(@"clicking Update Contact Info button")]
+        public void WhenClickingUpdateContactInfoButton()
+        {
+            new AccountServices(Driver)
+                .ClickUpdateProfileButton();
+        }
+
+        [Then(@"a confirmation message is shown")]
+        public void ThenAConfirmationMessageIsShown()
+        {
+            AccountServices accountServices = new AccountServices(Driver);
+            Thread.Sleep(2000);
+            Assert.IsTrue(accountServices.UpdateProfileMessage.Displayed);
+        }
 
     }
 }

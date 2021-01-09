@@ -17,3 +17,11 @@ Scenario: Apply for a Loan
 	When filling in requested details
 		And clicking Apply Now button
 	Then a confirmation table message is displayed
+
+@UpdateContactInfo
+Scenario: Update user's contact info
+	Given I am logged in with valid user
+		And I navigate to Update Contact Info page
+	When filling the updated information fields
+		And clicking Update Contact Info button
+	Then a confirmation message is shown

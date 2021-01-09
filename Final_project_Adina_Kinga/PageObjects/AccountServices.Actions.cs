@@ -32,5 +32,25 @@ namespace Final_project_Adina_Kinga.PageObjects
         {
             ApplyNowButton.Click();
         }
+        public void GoToUpdateContactInfoPage()
+        {
+            UpdateContactInfoOption.Click();
+        }
+        public AccountServices UpdateContactInfo(UserInformationDetailsDto updateContactInfo)
+        {
+            TypeTextId(FirstNameField, updateContactInfo.FirstName);
+            TypeTextId(LastNameField, updateContactInfo.LastName);
+            TypeTextId(AddressField, updateContactInfo.Address);
+            TypeTextId(CityField, updateContactInfo.City);
+            TypeTextId(StateField, updateContactInfo.State);
+            TypeTextId(ZipCodeField, updateContactInfo.ZipCode);
+            TypeTextId(PhoneNumberField.ToString(), updateContactInfo.Phone.ToString());           
+            return this;
+        }
+
+        public void ClickUpdateProfileButton()
+        {
+            UpdateProfileButton.Click();
+        }
     }
 }
