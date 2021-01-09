@@ -95,8 +95,9 @@
   <ItemGroup>
     <Compile Include="BaseDriver.cs" />
     <Compile Include="BasePage.cs" />
+    <Compile Include="Dto\RequestLoanDto.cs" />
     <Compile Include="Hooks.cs" />
-    <Compile Include="Dto\RegisterAccount.cs" />
+    <Compile Include="Dto\UserInformationDetailsDto.cs" />
     <Compile Include="PageObjects\AccountServices.Actions.cs" />
     <Compile Include="PageObjects\AccountServices.Locators.cs" />
     <Compile Include="PageObjects\HomePage.Actions.cs" />

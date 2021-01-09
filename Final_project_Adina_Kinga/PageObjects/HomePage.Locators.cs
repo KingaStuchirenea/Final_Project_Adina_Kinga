@@ -37,6 +37,17 @@ namespace Final_project_Adina_Kinga.PageObjects
         public const string ConfirmPasswordField = "repeatedPassword";
         public IWebElement SubmitRegisterationButton => _driver.FindElement(By.CssSelector("#customerForm > table > tbody > tr:nth-child(13) > td:nth-child(2) > input"));
         public IWebElement AccountCreatedSuccessfullyMessage => _driver.FindElement(By.CssSelector("#rightPanel > p"));
+        public IWebElement ForgotLoginInfoButton => _driver.FindElement(By.CssSelector("#loginPanel > p:nth-child(2) > a"));
+        public IWebElement FindMyLoginInfoButton => _driver.FindElement(By.CssSelector("#lookupForm > table > tbody > tr:nth-child(8) > td:nth-child(2) > input"));
+        public IWebElement FindMyLoginInfoErrorMessage => _driver.FindElement(By.CssSelector("#rightPanel > p:nth-child(3)"));
+        public const string ForgotLoginInfoFirstNameField = "firstName";
+        public const string ForgotLoginInfoLastNameField = "lastName";
+        public const string ForgotLoginInfoAddressField = "address.street";
+        public const string ForgotLoginInfoCityField = "address.city";
+        public const string ForgotLoginInfoStateField = "address.state";
+        public const string ForgotLoginInfoZipCodeField = "address.zipCode";
+        public const string ForgotLoginInfoSSNNumberField = "ssn";
+        public IWebElement ForgotLoginInfoMessageText => _driver.FindElement(By.CssSelector("#rightPanel > p:nth-child(3)"));
 
         #endregion
 

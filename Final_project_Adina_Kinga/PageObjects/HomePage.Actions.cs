@@ -1,4 +1,4 @@
-﻿using Final_project_Adina_Kinga.Models;
+﻿using Final_project_Adina_Kinga.Dto;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
@@ -32,27 +32,7 @@ namespace Final_project_Adina_Kinga.PageObjects
             RegisterButton.Click();
         }
 
-        //public void PopulateRegisterNewAccountForm(string firstName, string lastName, string address, string city, string state, string zipCode, int phone, int ssn) 
-        //{
-        //    FirstNameField.SendKeys(firstName);
-        //    LastNameField.SendKeys(lastName);
-        //    AddressField.SendKeys(address);
-        //    CityField.SendKeys(city);
-        //    StateField.SendKeys(state);
-        //    ZipCodeField.SendKeys(zipCode);
-        //    PhoneNumberField.SendKeys(phone.ToString());
-        //    SSNNumberField.SendKeys(ssn.ToString());
-        //}
-
-        //public void PopulateRegisterAccountDetails(string username, string password, string confirmPassword)
-        //{
-        //    UsernameField.SendKeys(username);
-        //    PasswordField.SendKeys(password);
-        //    ConfirmPasswordField.SendKeys(confirmPassword);
-        //    SubmitRegisterationButton.Click();
-        //}
-
-        public HomePage PopulateRegisterAccountForm(RegisterAccount registerAccount)
+        public HomePage PopulateRegisterAccountForm(UserInformationDetailsDto registerAccount)
         {
             TypeTextId(FirstNameField, registerAccount.FirstName);
             TypeTextId(LastNameField, registerAccount.LastName);
@@ -75,7 +55,26 @@ namespace Final_project_Adina_Kinga.PageObjects
             SubmitRegisterationButton.Click();
         }
 
-        
+        public void GoToForgotLoginInfoPage()
+        {
+            ForgotLoginInfoButton.Click();
+        }
 
+        public HomePage PopulateForgotLoginInfoForm(UserInformationDetailsDto forgotAccountDetails)
+        {
+            TypeTextId(ForgotLoginInfoFirstNameField, forgotAccountDetails.FirstName);
+            TypeTextId(ForgotLoginInfoLastNameField, forgotAccountDetails.LastName);
+            TypeTextId(ForgotLoginInfoAddressField, forgotAccountDetails.Address);
+            TypeTextId(ForgotLoginInfoCityField, forgotAccountDetails.City);
+            TypeTextId(ForgotLoginInfoStateField, forgotAccountDetails.State);
+            TypeTextId(ForgotLoginInfoZipCodeField, forgotAccountDetails.ZipCode);
+            TypeTextId(ForgotLoginInfoSSNNumberField.ToString(), forgotAccountDetails.SSN.ToString());
+            return this;
+        }
+
+        public void ClickFindMyLoginInfoButton()
+        {
+            FindMyLoginInfoButton.Click();
+        }
     }
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Final_project_Adina_Kinga.Models
+namespace Final_project_Adina_Kinga.Dto
 {
-    public class RegisterAccount
+    public class UserInformationDetailsDto
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -22,9 +22,10 @@ namespace Final_project_Adina_Kinga.Models
         public string Password { get; set; }
         public string ConfirmPassword { get; set; }
 
-        public RegisterAccount() 
+        public UserInformationDetailsDto()
         {
             SetRegistrationData();
+            SetRegistrationDataLoginDetails();
         }
 
         private void SetRegistrationData()
@@ -37,6 +38,10 @@ namespace Final_project_Adina_Kinga.Models
             ZipCode = "ZipCode";
             Phone = 1234567890;
             SSN = 0987654321;
+        }
+
+        private void SetRegistrationDataLoginDetails()
+        {
             Username = "John.Doe";
             Password = "password123";
             ConfirmPassword = "password123";
