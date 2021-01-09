@@ -10,6 +10,13 @@ Scenario: Open Savings Account
 	When choosing to open savings account
 	Then the account is created
 
+@TransferFunds
+Scenario: Transfer funds
+	Given logged in with valid user
+	And navigate to transfer funds
+	When transfering the inserted amount
+	Then the tranfer is done
+
 @RequestALoan
 Scenario: Apply for a Loan
 	Given I am logged in with valid user

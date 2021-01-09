@@ -22,6 +22,12 @@ namespace Final_project_Adina_Kinga.PageObjects
         public IWebElement SavingsOption => _driver.FindElement(By.CssSelector("option[value='1']"));
         public IWebElement OpenNewAccountButton => _driver.FindElement(By.CssSelector("input[value='Open New Account']"));
         public IWebElement AccountOpenedMessage => _driver.FindElement(By.CssSelector("#rightPanel > div > div > p:nth-child(2)"));
+        public IWebElement TransferFundsOption => _driver.FindElement(By.XPath("//a[text()='Transfer Funds']"));
+        public IWebElement AmountField => _driver.FindElement(By.Id("amount"));
+        public IWebElement TrandferButton => _driver.FindElement(By.CssSelector("input[value='Transfer']"));
+        public IWebElement TransferCompleteMessage => _driver.FindElement(By.CssSelector("#rightPanel > div > div > p:nth-child(2)"));
+
+
 
 
         public IWebElement RequestLoanOption => _driver.FindElement(By.CssSelector("a[href='/parabank/requestloan.htm']"));

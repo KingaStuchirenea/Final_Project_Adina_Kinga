@@ -18,11 +18,11 @@ namespace Final_project_Adina_Kinga
             NavigateToUrl();
         }
 
-        //[AfterScenario]
-        //public void AfterScenario()
-        //{
-        //   Driver.Quit();
-        //}
+        [AfterScenario]
+        public void AfterScenario()
+        {
+            Driver.Quit();
+        }
 
         public void NavigateToUrl()
         {
