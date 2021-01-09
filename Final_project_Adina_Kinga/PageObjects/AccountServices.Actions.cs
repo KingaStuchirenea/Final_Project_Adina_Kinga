@@ -38,12 +38,12 @@ namespace Final_project_Adina_Kinga.PageObjects
         }
         public AccountServices UpdateContactInfo(UserInformationDetailsDto updateContactInfo)
         {
-            TypeTextId(FirstNameField, updateContactInfo.FirstName);
-            TypeTextId(LastNameField, updateContactInfo.LastName);
-            TypeTextId(AddressField, updateContactInfo.Address);
-            TypeTextId(CityField, updateContactInfo.City);
-            TypeTextId(StateField, updateContactInfo.State);
-            TypeTextId(ZipCodeField, updateContactInfo.ZipCode);
+            TypeTextId(FirstNameField, updateContactInfo.FirstName + " updated");
+            TypeTextId(LastNameField, updateContactInfo.LastName + " updated");
+            TypeTextId(AddressField, updateContactInfo.Address + " updated");
+            TypeTextId(CityField, updateContactInfo.City + " updated");
+            TypeTextId(StateField, updateContactInfo.State + " updated");
+            TypeTextId(ZipCodeField, updateContactInfo.ZipCode + " updated");
             TypeTextId(PhoneNumberField.ToString(), updateContactInfo.Phone.ToString());           
             return this;
         }
