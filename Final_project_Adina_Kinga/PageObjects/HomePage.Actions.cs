@@ -76,5 +76,12 @@ namespace Final_project_Adina_Kinga.PageObjects
         {
             FindMyLoginInfoButton.Click();
         }
+
+        public void ClickHomePageIcons()
+        {
+            HomePageIcon.Click();
+            AboutIcon.Click();
+            ContactButton.Click();
+        }
     }
 }

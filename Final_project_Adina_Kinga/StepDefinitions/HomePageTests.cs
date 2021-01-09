@@ -107,5 +107,19 @@ namespace Final_project_Adina_Kinga.StepDefinitions
             Assert.IsTrue(homePage.DatabaseCleanedMessage.Displayed);
         }
 
+        [Given(@"I click on all the welcome to Parabank Icons")]
+        public void GivenIClickOnAllTheWelcomeToParabankIcons()
+        {
+            new HomePage(Driver)
+                .ClickHomePageIcons();
+        }
+
+        [Then(@"all the pages load properly")]
+        public void ThenAllThePagesLoadProperly()
+        {
+            HomePage homePage = new HomePage(Driver);
+            Assert.IsTrue(homePage.ContactIcon.Displayed);
+        }
+
     }
 }

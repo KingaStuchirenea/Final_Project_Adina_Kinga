@@ -24,13 +24,33 @@ namespace Final_project_Adina_Kinga.PageObjects
         {
             TypeTextId(LoanAmountField, requestLoan.LoanAmount.ToString());
             TypeTextId(DownPaymentField, requestLoan.DownPayment.ToString());
-            TypeTextId(FromAccountDropdown, requestLoan.FromAccount);
+            FromAccountDropdown.Click();
             return this;
         }
 
         public void ClickApplyNow()
         {
             ApplyNowButton.Click();
+        }
+        public void GoToUpdateContactInfoPage()
+        {
+            UpdateContactInfoOption.Click();
+        }
+        public AccountServices UpdateContactInfo(UserInformationDetailsDto updateContactInfo)
+        {
+            TypeTextId(FirstNameField, updateContactInfo.FirstName + " updated");
+            TypeTextId(LastNameField, updateContactInfo.LastName + " updated");
+            TypeTextId(AddressField, updateContactInfo.Address + " updated");
+            TypeTextId(CityField, updateContactInfo.City + " updated");
+            TypeTextId(StateField, updateContactInfo.State + " updated");
+            TypeTextId(ZipCodeField, updateContactInfo.ZipCode + " updated");
+            TypeTextId(PhoneNumberField.ToString(), updateContactInfo.Phone.ToString());           
+            return this;
+        }
+
+        public void ClickUpdateProfileButton()
+        {
+            UpdateProfileButton.Click();
         }
     }
 }
